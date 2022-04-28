@@ -44,15 +44,50 @@
             </ul>
         </div>
     </nav>
-    
+
     <div class="container mt-3">
 
         <div class="card mt-3">
             <div class="card-header">
                 Matricula
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Poder matricular meu filho no ano letivo e em atividades extras, para facilitar a minha </p>
+            <div class="card-body">
+                <div class="row">
+                    <div class=" col-12 ">
+                        <p class="card-text">
+                            • Matricule seu filho no ano letivo e em atividades extra-curiculares aqui.
+                        </p>
+                        <div>
+                            <form>
+                                <div class="col-5 col-sm-5">
+                                    <label for="idContrato">Nome do Aluno</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-5 col-sm-2">
+                                    <label for="idContrato">Data de Nacimento</label>
+                                    <input type="date" class="form-control" />
+                                </div>
+                                <div class="col-5 col-sm-5">
+                                    <label for="idContrato">Informe o ano que sera cursado:</label>
+                                    <input type="text" class="form-control" placeholder="Ex: Sexto ano" />
+                                    <div class="col-sm-5 col-sm-8">
+                                        <label for="idContrato">Atividades extra-curiculares:</label>
+                                        <select name="select">
+                                            <option value="valor1" selected>Futebol</option>
+                                            <option value="valor2">Volei</option>
+                                            <option value="valor3">Judo</option>
+                                            <option value="valor4">Natação</option>
+                                            <option value="valor5">Reforço</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                &nbsp;
+                                <button class="btn btn-primary" (click)="salvar">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -60,17 +95,59 @@
             <div class="card-header">
                 Acompanhamento Escolar
             </div>
-            <div class="card-body mt-3">                
-                <p class="card-text">•	Poder acompanhar a vida escolar do meu filho, monitorando provas, notas, atividades extras e faltas, para acompanhar de perto a vida do meu filho.   </p>
+            <div class="card-body mt-3">
+                <p class="card-text">• Poder acompanhar a vida escolar do meu filho, monitorando provas, notas,
+                    atividades extras e faltas, para acompanhar de perto a vida do meu filho. </p>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div>
+                        <button type="submit" class="btn btn-md btn-primary">Consultar notas</button>&nbsp;
+
+
+                        <button type="submit" class="btn btn-md btn-primary">Avaliações</button>&nbsp;
+
+
+                        <button type="submit" class="btn btn-md btn-primary">Frequencia</button>
+                    </div>
+
+                </form>
+
             </div>
         </div>
-        
+
         <div class="card mt-3">
             <div class="card-header">
                 Pagamentos
             </div>
-            <div class="card-body mt-3">                
-                <p class="card-text">•	Receber boleto de pagamento do meu e-mail e no celular, para facilitar minha organização financeira</p>
+            <div class="card-body">
+                <div class="row">
+                    <div class=" col-12 ">
+                        <p class="card-text">
+                            • Receber boleto de pagamento do meu e-mail e no celular, para facilitar minha
+                            organização financeira
+                        </p>
+                        <div>
+                            <form>
+                                <div class="col-5 col-sm-5">
+                                    <label for="idContrato">CPF</label>
+                                    <input type="number" class="form-control" placeholder="CPF/CNPJ" />
+                                </div>
+                                <div class="col-5 col-sm-2">
+                                    <label for="idContrato">E-mail</label>
+                                    <input type="text" class="form-control" placeholder="exemplo@email.com">
+                                </div>
+                                <div class="col-5 col-sm-5">
+                                    <label for="idContrato">Telefone:</label>
+                                    <input type="tel" class="form-control" placeholder="41-9999 9999" />
+                                    <div class="col-sm-5 col-sm-8"><br>
+                                        <button type="submit" class="btn btn-md btn-primary">Gerar boleto</button>
+                                    </div><br>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -78,17 +155,26 @@
             <div class="card-header">
                 Chat
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Poder enviar e receber msg da escola e dos professores</p>
+            <div class="card-body">
+                <p class="card-text">• Poder enviar e receber msg da escola e dos professores</p>
             </div>
+
         </div>
 
         <div class="card mt-3">
             <div class="card-header">
                 Material estudo
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Consultar o material a ser estudado, por disciplina cursada, para facilitar minha organização nos estudos. </p>
+            <div class="card-body">
+                <p class="card-text">• Consultar o material a ser estudado, por disciplina cursada, para facilitar minha
+                    organização nos estudos. </p>
+            </div>
+            <div class="card-body">
+                <p>Nossa escola segue a BNCC (Base Nascional Comum curricular) que norteiam o ensino a nivel nascional.
+                </p>
+                <p>A baixo segue um Link para acessar as BNCC</p>
+                <a href="http://basenacionalcomum.mec.gov.br/abase/">BNCC</a>
+
             </div>
         </div>
 
