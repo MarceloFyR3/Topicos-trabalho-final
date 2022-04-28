@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -50,26 +51,168 @@
             <div class="card-header">
                 Notas
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Ser capaz de consultar minha agenda de provas, aulas e atividades extras, para facilitar minha organização nos estudos. </p>
+            <div class="card-body">
+                <p class="card-text">• Ser capaz de consultar minha agenda de provas, aulas e atividades extras, para
+                    facilitar minha organização nos estudos. </p>
+
+                <button type="button" class="btn btn-primary" id="" onclick="Consultaragendadeprovas()">Cronograma de
+                    Provas</button><br><br>
+
+                <div id="dvConsultaAgenda" style="display: none;">
+                    <ul class="list-group">
+                        <li class="list-group-item">02 de Abril - Prova de Português</li>
+                        <li class="list-group-item">03 de Abril - Prova de Matematica</li>
+                        <li class="list-group-item">04 de Abril - Prova de Geografia</li>
+                        <li class="list-group-item">05 de Abril - Prova de Ciências</li>
+                        <li class="list-group-item">06 de Abril - Prova de Ed.Fisica</li><br>
+                    </ul>
+                </div>
+
+                <hr />
+
+                <button type="button" class="btn btn-primary" id="" onclick="HorariodeAulas()">Hórario de
+                    Aulas</button><br><br>
+
+                <div id="dvHorariodeAulas" style="display: none;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Segunda</th>
+                                <th scope="col">Terça</th>
+                                <th scope="col">Quarta</th>
+                                <th scope="col">Quinta</th>
+                                <th scope="col">Sexta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Português</td>
+                                <td>Matematica</td>
+                                <td>Geografia</td>
+                                <td>Ciências</td>
+                                <td>Ed.Fisica</td>
+                            </tr>
+                            <tr>
+                                <td>Português</td>
+                                <td>Matematica</td>
+                                <td>Geografia</td>
+                                <td>Ciências</td>
+                                <td>Ed.Fisica</td>
+                            </tr>
+                            <tr>
+                                <td>Intervalo</td>
+                                <td>Intervalo</td>
+                                <td>Intervalo</td>
+                                <td>Intervalo</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Português</td>
+                                <td>Matematica</td>
+                                <td>Geografia</td>
+                                <td>Ciências</td>
+                                <td>Ed.Fisica</td>
+                            </tr>
+                            <tr>
+                                <td>Português</td>
+                                <td>Matematica</td>
+                                <td>Geografia</td>
+                                <td>Ciências</td>
+                                <td>Ed.Fisica</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <hr />
+
+                <button type="button" class="btn btn-primary" id="" onclick="AulasExtras()">Aulas Extras</button>
+
+                <div id="dvAulasExtras" style="display: none;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Segunda</th>
+                                <th scope="col">Quarta</th>
+                                <th scope="col">Sexta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cálculo</td>
+                                <td>Produção de Texto</td>
+                                <td>Vôlei</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
+
 
         <div class="card mt-3">
             <div class="card-header">
                 Matricula
             </div>
-            <div class="card-body mt-3">                
-                <p class="card-text">•	Ser capaz de me matricular em atividades extras, para não ter que ir na secretaria. </p>
+            <div class="card-body mt-3">
+                <p class="card-text">• Ser capaz de me matricular em atividades extras, para não ter que ir na
+                    secretaria. </p>
+
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" placeholder="Nome" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label>Matricula</label>
+                        <input type="text" class="form-control" placeholder="Matricula" id="matricula">
+                    </div>
+                    <div class="form-group">
+                        <label>Matricula</label>
+                        <select class="form-control" id="atividades">
+                            <option value="0">-- Selecione -- </option>
+                            <option value="1">Atividade Extra 1</option>
+                            <option value="2">Atividade Extra 2</option>
+                            <option value="3">Atividade Extra 3</option>
+                            <option value="4">Atividade Extra 4</option>
+                            <option value="5">Atividade Extra 5</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="matricularAluno()">Matricular</button>
+                </form>
             </div>
         </div>
-        
+
         <div class="card mt-3">
             <div class="card-header">
                 Forúm
             </div>
-            <div class="card-body mt-3">                
-                <p class="card-text">•	Manter uma comunicação direta com meus professores através de um chat/fórum, porque é mais fácil interagir em qualquer momento que eu precise. </p>
+            <div class="card-body mt-3">
+                <p class="card-text">• Manter uma comunicação direta com meus professores através de um chat/fórum,
+                    porque é mais fácil interagir em qualquer momento que eu precise. </p>
+
+                    <div class="col-sm-3 col-sm-offset-4 frame">
+                        <ul></ul>
+                        <div>
+                            <div class="msj-rta macro">                        
+                                <div class="text text-r" style="background:whitesmoke !important">
+                                    <input id="inputEnviarMmensagem" class="mytext" placeholder="Type a message"/>
+                                </div> 
+
+                                <br>
+
+                                <button type="button" class="btn btn-primary" onclick="enviarMensagem()">Enviar</button>   
+            
+                            </div>
+                            <div style="padding:10px;">
+                                <span class="glyphicon glyphicon-share-alt"></span>
+                            </div>                
+                        </div>
+                    </div>       
             </div>
         </div>
 
@@ -77,15 +220,82 @@
             <div class="card-header">
                 Material Escolar
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Consultar o material a ser estudado, por disciplina cursada, para facilitar minha organização nos estudos. </p>
+            <div class="card-body">
+                <p class="card-text">• Consultar o material a ser estudado, por disciplina cursada, para facilitar minha
+                    organização nos estudos. </p>
+                <div>
+                    <button type="button" class="btn outline-dark" onclick="MateriaPortugues()">Português</button>
+
+                    <div id="dvConsultaPortugues" style="display: none;">
+                        <ul class="list-group">
+                            <li class="list-group-item">Produção de Textos</li>
+                            <li class="list-group-item">Gramatica</li>
+                            <li class="list-group-item">Linguistica</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <button type="button" class="btn outline-dark" onclick="materiaMatematica()">Matematica</button>
+
+
+                    <div id="dvConsultaMatematicca" style="display: none;">
+                        <ul class="list-group">
+                            <li class="list-group-item">Algebra</li>
+                            <li class="list-group-item">Potencia</li>
+                            <li class="list-group-item">Porcentagem</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div>
+
+                    <button type="button" class="btn outline-dark" onclick="materiaGeografia()">Geografia</button>
+
+
+                    <div id="dvConsultaGeografia" style="display: none;">
+                        <ul class="list-group">
+                            <li class="list-group-item">Terra</li>
+                            <li class="list-group-item">Biodiversidade</li>
+                            <li class="list-group-item">Paises</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div>
+
+                    <button type="button" class="btn outline-dark" onclick="materiaCiencias()">Ciências</button>
+
+
+                    <div id="dvConsultaCiencias" sstyle="display: none;">
+                        <ul class="list-group">
+                            <li class="list-group-item">Corpo Humano</li>
+                            <li class="list-group-item">Nutrientes</li>
+                            <li class="list-group-item">Big Bang</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+                <div>
+                    <button type="button" class="btn outline-dark" onclick="materiaEdFisica()">Ed.Fisica</button>
+
+
+                    <div id="dvConsultaEdFisica" style="display: none;">
+                        <ul class="list-group">
+                            <li class="list-group-item">Fundamentos do Futebol</li>
+                            <li class="list-group-item">Fundamentos Vôlei</li>
+                            <li class="list-group-item">Atividades Praticas</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
 
     </div>
-
-
-    <script src="script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -97,6 +307,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="aluno.js"></script>
 
 </body>
 
