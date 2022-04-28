@@ -51,8 +51,27 @@
             <div class="card-header">
                 Alunos
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	registrar a agenda de provas, aulas dos alunos e as atividades extras de cada aluno, para que eles possam consultar seus compromissos.</p>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="InputNameAluno">Aluno</label>
+                        <input type="text" class="form-control" id="InputNameAluno">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMateria">Matéria</label>
+                        <input type="text" class="form-control" id="inputMateria">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputConteudo">Conteúdo</label>
+                        <input type="text" class="form-control" id="InputConteudo">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputData">Data</label>
+                        <input type="date" class="form-control" id="InputData" placeholder="Data">
+                    </div>
+                </form>
+                <button class="btn btn-primary" type="button" onclick="gerarAtividade()">Enviar</button>
+
             </div>
         </div>
 
@@ -60,17 +79,40 @@
             <div class="card-header">
                 Secretariada
             </div>
-            <div class="card-body mt-3">                
-                <p class="card-text">•	Aprovar a solicitação de matricula de cada aluno, dependendo da sua carga horária definida e já ocupada, para que o aluno não fique sobrecarregado de atividades. </p>
+            <div class="card-body mt-3">
+                <button type="button" onclick="carregarTableData()" class="btn btn-primary">Verificar Pendências</button>
+                <hr />
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Aluno</th>
+                        <th scope="col">Matricula</th>
+                        <th scope="col">Carga Horária</th>
+                        <th scope="col">Opções</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                  </table>
             </div>
         </div>
-        
+
         <div class="card mt-3">
             <div class="card-header">
                 Relatórios
             </div>
-            <div class="card-body mt-3">                
-                <p class="card-text">•	de relatórios sobre a evolução dos meus alunos, de forma individual e por grupos, porque assim posso avaliar a efetividade das aulas e necessidades e aulas de recuperação ou reciclagem.</p>
+            <div class="card-body mt-3">
+                <form>
+                    <select class="custom-select">
+                        <option selected>Selecione o Aluno</option>
+                        <option value="1">Huguinho</option>
+                        <option value="2">Zezinho</option>
+                        <option value="3">Luizinho</option>
+                    </select>
+                    <p></p>
+                </form>
+                <button type="button" class="btn btn-primary">Gerar relatório</button>
+                <p class="card-text">
             </div>
         </div>
 
@@ -78,8 +120,14 @@
             <div class="card-header">
                 Material de estudo
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Postar material de estudo para meus alunos, e até material específico para cada aluno, caso seja necessário, para que o meu aluno tenha fácil acesso ao material a ser estudado.  </p>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Postar material</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
+                <p class="card-text">
             </div>
         </div>
 
@@ -87,8 +135,22 @@
             <div class="card-header">
                 Chamada
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Registrar a frequência dos meus alunos, evitando assim manuseio de papel para controle de presença e faltas.  </p>
+            <div class="card-body">
+                <form action="Chamada">
+                    <label for="Materia">Selecione a Matéria</label>
+                    <select class="custom-select">
+                        <option selected>Selecione a Matéria</option>
+                        <option value="1">Português</option>
+                        <option value="2">Matemática</option>
+                        <option value="3">Inglês</option>
+                    </select></p>
+                    <div class="form-group">
+                        <label for="Materia">Selecione a Data</label>
+                        <input type="date" class="form-control" id="Materia" placeholder="Data">
+                    </div>
+                    <button type="button" class="btn btn-primary">Gerar Chamada</button>
+                </form>
+                <p class="card-text">
             </div>
         </div>
 
@@ -96,8 +158,34 @@
             <div class="card-header">
                 Lançar Notas
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Registrar as notas obtidas pelos meus alunos, para manter o controle de aprovação e reprovação.   </p>
+            <div class="card-body">
+                <form>
+                    <select class="custom-select">
+                        <option selected>Selecione o Aluno</option>
+                        <option value="1">Huguinho</option>
+                        <option value="2">Zezinho</option>
+                        <option value="3">Luizinho</option>
+                    </select>
+                    <p></p>
+                    <div>
+                        <p>
+                            <select class="custom-select">
+                                <option selected>Seleciono a Atividade</option>
+                                <option value="1">Prova</option>
+                                <option value="2">Trabalho</option>
+                                <option value="3">Atividade complementar</option>
+                            </select>
+                        </p>
+                        <div class="form-group">
+                            <label for="Materia">Informe a nota.</label>
+                            <input type="number" class="form-control" id="Materia" placeholder="Nota">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div>
+                <p class="card-text">
             </div>
         </div>
 
@@ -105,14 +193,49 @@
             <div class="card-header">
                 Correio
             </div>
-            <div class="card-body">                
-                <p class="card-text">•	Poder enviar e-mail e SMS para meus alunos e pais, facilitando e agilizando a comunicação.    </p>
+            <div class="card-body">
+                <form class="form-group">
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="InputAluno">Aluno</label>
+                            <input type="text" class="form-control" id="InputAluno" placeholder="Nome" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="InputResponsavel">Responsável</label>
+                        <input type="text" class="form-control" id="InputResponsavel" placeholder="Nome" value=""
+                            required>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="InputEmail">Email</label>
+                            <input type="email" class="form-control" id="InputEmail" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="InputTelefone">Telefone</label>
+                        <input type="number" class="form-control" id="InputTelefone" placeholder="(DDD) 99999-9999"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputMensagem">Escreva a mensagem</label>
+                        <textarea class="form-control" id="InputMensagem" rows="3"></textarea>
+                    </div>
+
+                </form>
+                <button class="btn btn-primary" type="button" onclick="enviarMensagemPais()">Enviar</button>
+            </div>
+            <div>
+                <p class="card-text">
             </div>
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="./../../script.js"></script>
+    <script src="professor.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
