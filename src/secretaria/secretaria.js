@@ -60,9 +60,6 @@ function carregarTableDataMatricula() {
 
             let anoLetivo = row.insertCell(4);
             anoLetivo.innerHTML = item.anoLetivo;
-
-            // let btn = row.insertCell(5);
-            // btn.innerHTML = "<button type=\"button\" onclick='carregarBoletoAluno(" + item.id + ")' class=\"btn btn-secondary\">Imprimir</button>";
         });
     }
 }
