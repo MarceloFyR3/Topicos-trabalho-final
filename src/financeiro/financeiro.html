@@ -51,13 +51,29 @@
                 Relatório
             </div>
             <div class="card-body">                
-                <p class="card-text">•	Que o sistema exporte informações sobre atividades extras dos alunos, para que a emissão do boleto mensal seja feita de forma correta.</p>
+                <button type="button" onclick="carregarTableData()" class="btn btn-primary">Carregar Dados</button>
+                <br />
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Aluno</th>
+                        <th scope="col">Atividade</th>
+                        <th scope="col">Data Matrícula</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Opções</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                  </table>
             </div>
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="./../../script.js"></script>
+    <script src="financeiro.js"></script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
