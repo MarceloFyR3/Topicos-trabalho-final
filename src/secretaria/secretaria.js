@@ -118,3 +118,74 @@ function exportarNotasAluno() {
         alert("ALUNO NÃO ENCONTRADO!");
     }
 }
+
+const mensagensPais = [
+
+    { aluno: "Aluno 1", msgem: "23/04/2022 - Hoje meu filho não vai para a aula, por motivos médicos."},
+    { aluno: "Aluno 2", msgem: "19/04/2022 - Gostaria de verificar a possibilidade de trocar meu filho de turma."},
+    { aluno: "Aluno 3", msgem: "10/04/2022 - A apresentação de teatro foi maravilhosa, obrigado escola."},
+]
+
+function verificarMensagemPais() {
+    const imputMensagemPais = document.getElementById("inputMensagemPais");
+
+    let mensagens = mensagensPais.filter(f => f.aluno == imputMensagemPais.value);
+
+    if (mensagens.length > 0) {
+        let msg = "Aluno: " + mensagens[0].aluno + "\n\n";
+
+        mensagens.forEach(aluno => {
+            msg = msg + "Mensagem: " + aluno.msgem + "\n" 
+        });
+
+        alert(msg);
+
+    } else {
+        alert("ALUNO NÃO ENCONTRADO!");
+    }
+}
+
+function enviarMensagemPais() {
+    const inputNomeAluno = document.getElementById("inputNomeAluno").value;
+    const inputNumeroPais = document.getElementById("inputNumeroPais").value;  
+    const inputMensagemEnviar = document.getElementById("inputMensagemEnviar").value;
+
+    
+    let msg = "solicitação enviada: " + inputNomeAluno + "\n\n";
+    
+    if (inputNomeAluno == "Aluno 1" || inputNomeAluno == "Aluno 2" || inputNomeAluno == "Aluno 3") {
+        msg = msg + "Número de telefone enviado: " + inputNumeroPais + "\n" + "Mensagem enviada: " + inputMensagemEnviar;
+        alert(msg);
+    } else {
+        alert("ALUNO NÃO ENCONTRADO!");
+    }
+}
+
+function clickhidden() {
+    const inputNomeAluno2 = document.getElementById("inputNomeAluno2").value;
+    var div = document.querySelector("#hidden");
+    var div2 = document.querySelector("#hidden2");
+    var div3 = document.querySelector("#hidden3");
+
+    if (inputNomeAluno2 == "Aluno 1") {
+        div.style.display = "block";
+        div2.style.display = "none";
+        div3.style.display = "none";
+
+    } else if(inputNomeAluno2 == "Aluno 2"){
+        div.style.display = "none";
+        div2.style.display = "block";
+        div3.style.display = "none";
+    } else if(inputNomeAluno2 == "Aluno 3"){
+        div.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "block";
+    } else{
+        div.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "none";
+        alert("ALUNO NÃO ENCONTRADO!");
+    }
+
+    
+}
