@@ -27,8 +27,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -43,10 +44,12 @@ const alunos = [
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -61,10 +64,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -79,10 +84,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -97,10 +104,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -115,11 +124,13 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
                }
             },
             {
-               "nome": "Capoeira",
+               "id": 6,
+               "nome": "Calculo",
                "cargaHoraria": 40,
                "presença": 0,
                "falta": 0,
@@ -133,7 +144,8 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -167,8 +179,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -177,16 +190,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -201,10 +216,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -219,10 +236,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -237,10 +256,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -255,7 +276,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -289,8 +331,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -299,16 +342,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -323,10 +368,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -341,10 +388,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -359,10 +408,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -377,7 +428,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -411,8 +483,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -421,16 +494,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -445,10 +520,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -463,10 +540,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -481,10 +560,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -499,7 +580,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -533,8 +635,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -543,16 +646,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -567,10 +672,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -585,10 +692,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -603,10 +712,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -621,7 +732,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -655,8 +787,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -665,16 +798,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -689,10 +824,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -707,10 +844,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -725,10 +864,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -743,7 +884,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -777,8 +939,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -787,16 +950,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -811,10 +976,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -829,10 +996,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -847,10 +1016,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -865,7 +1036,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -899,8 +1091,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -909,16 +1102,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -933,10 +1128,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -951,10 +1148,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -969,10 +1168,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -987,7 +1188,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1021,8 +1243,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1031,16 +1254,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1055,10 +1280,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1073,10 +1300,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1091,10 +1320,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1109,7 +1340,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1143,8 +1395,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1153,16 +1406,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1177,10 +1432,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1195,10 +1452,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1213,10 +1472,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1231,7 +1492,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1265,8 +1547,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1275,16 +1558,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1299,10 +1584,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1317,10 +1604,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1335,10 +1624,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1353,7 +1644,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1387,8 +1699,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1397,16 +1710,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1421,10 +1736,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1439,10 +1756,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1457,10 +1776,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1475,7 +1796,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1509,8 +1851,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1519,16 +1862,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1543,10 +1888,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1561,10 +1908,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1579,10 +1928,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1597,7 +1948,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1631,8 +2003,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1641,16 +2014,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1665,10 +2040,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1683,10 +2060,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1701,10 +2080,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1719,7 +2100,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1753,8 +2155,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1763,16 +2166,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1787,10 +2192,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1805,10 +2212,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1823,10 +2232,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1841,7 +2252,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1875,8 +2307,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1885,16 +2318,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1909,10 +2344,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1927,10 +2364,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1945,10 +2384,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -1963,7 +2404,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -1997,8 +2459,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2007,16 +2470,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2031,10 +2496,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2049,10 +2516,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2067,10 +2536,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2085,7 +2556,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -2119,8 +2611,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2129,16 +2622,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2153,10 +2648,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2171,10 +2668,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2189,10 +2688,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2207,7 +2708,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -2241,8 +2763,9 @@ const alunos = [
          "id": 2,
          "nome": "Turma 2",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2251,16 +2774,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2275,10 +2800,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2293,10 +2820,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2311,10 +2840,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2329,7 +2860,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
@@ -2363,8 +2915,9 @@ const alunos = [
          "id": 1,
          "nome": "Turma 1",
          "anoLetivo": 0,
-         "disciplina": [
+         "disciplinas": [
             {
+               "id": 1,
                "nome": "Matematica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2373,16 +2926,18 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "tipo": "Curricular",
                "atividadeComplementar": 0,
+               "tipo": "Curricular",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
                   "email": "maria@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 2,
                "nome": "Portugues",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2397,10 +2952,12 @@ const alunos = [
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 1
                }
             },
             {
+               "id": 3,
                "nome": "Ciencias",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2415,10 +2972,12 @@ const alunos = [
                   "id": 3,
                   "nome": "Tiago Santos",
                   "email": "tiago@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 3
                }
             },
             {
+               "id": 4,
                "nome": "Educação Fisica",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2433,10 +2992,12 @@ const alunos = [
                   "id": 4,
                   "nome": "Sirlei Da Silva",
                   "email": "geo@escola.com.br",
-                  "genero": "M"
+                  "genero": "M",
+                  "discliplinaId": 4
                }
             },
             {
+               "id": 5,
                "nome": "Geografia",
                "cargaHoraria": 80,
                "presença": 0,
@@ -2451,7 +3012,28 @@ const alunos = [
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
-                  "genero": "F"
+                  "genero": "F",
+                  "discliplinaId": 5
+               }
+            },
+            {
+               "id": 6,
+               "nome": "Calculo",
+               "cargaHoraria": 40,
+               "presença": 0,
+               "falta": 0,
+               "notaProva": 0,
+               "trabalho": 0,
+               "pathMaterialEstudo": "c:\\material\\geografia",
+               "atividadeComplementar": 0,
+               "valor": "200.00",
+               "tipo": "Extra",
+               "professor": {
+                  "id": 5,
+                  "nome": "Marta Costa",
+                  "email": "marta@escola.com.br",
+                  "genero": "F",
+                  "discliplinaId": 6
                }
             }
          ]
