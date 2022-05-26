@@ -2,10 +2,6 @@ function carregarTableData() {
 
     const table = document.getElementById("tableBody");
 
-    // var obj = JSON.parse(contacts);
-    console.log(alunos)
-
-
     let totalRegistro = table.children.length;
 
     if (totalRegistro == 0) {
@@ -44,7 +40,6 @@ function carregarTableData() {
 
 function carregarBoletoAluno(id) {
     let item = alunos.find(f => f.id == id);
-    console.log(item)
 
     let msg = "Nome: " + item.Nome + "\n";
     msg = msg + "Turma: " + item.turma.nome + "\n";
