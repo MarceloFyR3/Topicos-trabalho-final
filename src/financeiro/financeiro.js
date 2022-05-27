@@ -18,10 +18,10 @@ function carregarTableData() {
             turma.innerHTML = aluno.turma.nome;
 
             let curricular = row.insertCell(3);
-            curricular.innerHTML = aluno.turma.disciplina.filter(d => d.tipo == "Curricular").map(x => x.nome).join(", ");
+            curricular.innerHTML = aluno.turma.disciplinas.filter(d => d.tipo == "Curricular").map(x => x.nome).join(", ");
 
             let extra = row.insertCell(4);
-            let tt = aluno.turma.disciplina.filter(d => d.tipo == "Extra").map(x => x.nome).join(", ")
+            let tt = aluno.turma.disciplinas.filter(d => d.tipo == "Extra").map(x => x.nome).join(", ")
             extra.innerHTML = tt === "" ? "-" : tt;
 
             let valor = row.insertCell(5);

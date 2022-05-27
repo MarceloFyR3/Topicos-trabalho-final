@@ -38,8 +38,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -60,12 +62,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -80,6 +84,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -100,6 +106,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -120,32 +128,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -190,8 +180,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -212,12 +204,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -232,6 +226,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -252,6 +248,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -272,32 +270,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -342,8 +322,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -364,12 +346,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -384,6 +368,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -404,6 +390,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -424,32 +412,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -494,8 +464,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -516,12 +488,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -536,6 +510,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -556,6 +532,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -576,32 +554,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -646,8 +606,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -668,12 +630,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -688,6 +652,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -708,6 +674,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -728,32 +696,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -798,8 +748,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -820,12 +772,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -840,6 +794,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -860,6 +816,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -880,32 +838,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -950,8 +890,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -972,12 +914,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -992,6 +936,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1012,6 +958,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1032,32 +980,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -1102,8 +1032,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -1124,12 +1056,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -1144,6 +1078,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1164,6 +1100,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1184,32 +1122,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -1254,8 +1174,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -1276,12 +1198,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -1296,6 +1220,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1316,6 +1242,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1336,32 +1264,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -1406,8 +1316,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -1428,12 +1340,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -1448,6 +1362,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1468,6 +1384,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1488,32 +1406,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -1558,8 +1458,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -1580,12 +1482,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -1600,6 +1504,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1620,6 +1526,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1640,32 +1548,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -1710,8 +1600,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -1732,12 +1624,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -1752,6 +1646,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1772,6 +1668,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1792,32 +1690,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -1862,8 +1742,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -1884,12 +1766,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -1904,6 +1788,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -1924,6 +1810,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -1944,32 +1832,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2014,8 +1884,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2036,12 +1908,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2056,6 +1930,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2076,6 +1952,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -2096,32 +1974,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2166,8 +2026,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2188,12 +2050,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2208,6 +2072,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2228,6 +2094,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -2248,32 +2116,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2318,8 +2168,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2340,12 +2192,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2360,6 +2214,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2380,6 +2236,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -2400,32 +2258,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2470,8 +2310,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2492,12 +2334,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2512,6 +2356,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2532,6 +2378,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -2552,32 +2400,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2622,8 +2452,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2644,12 +2476,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2664,6 +2498,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2684,6 +2520,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -2704,32 +2542,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2774,8 +2594,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2796,12 +2618,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2816,6 +2640,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2836,6 +2662,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -2856,32 +2684,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
@@ -2926,8 +2736,10 @@ const alunos = [
                "trabalho": 0,
                "pathMaterialEstudo": "c:\\material\\matematica",
                "valor": "200.00",
-               "atividadeComplementar": 0,
                "tipo": "Curricular",
+               "atividadeComplementar": 0,
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Segunda",
                "professor": {
                   "id": 1,
                   "nome": "Maria De Lurdes Aguiar",
@@ -2948,12 +2760,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Terça",
                "professor": {
                   "id": 2,
                   "nome": "Afonso Padilha",
                   "email": "afonso@escola.com.br",
                   "genero": "M",
-                  "discliplinaId": 1
+                  "discliplinaId": 2
                }
             },
             {
@@ -2968,6 +2782,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quarta",
                "professor": {
                   "id": 3,
                   "nome": "Tiago Santos",
@@ -2988,6 +2804,8 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Quinta",
                "professor": {
                   "id": 4,
                   "nome": "Sirlei Da Silva",
@@ -3008,32 +2826,14 @@ const alunos = [
                "atividadeComplementar": 0,
                "valor": "200.00",
                "tipo": "Curricular",
+               "provas": ["23/06/2022"],
+               "diaSemanaAula": "Sexta",
                "professor": {
                   "id": 5,
                   "nome": "Marta Costa",
                   "email": "marta@escola.com.br",
                   "genero": "F",
                   "discliplinaId": 5
-               }
-            },
-            {
-               "id": 6,
-               "nome": "Calculo",
-               "cargaHoraria": 40,
-               "presença": 0,
-               "falta": 0,
-               "notaProva": 0,
-               "trabalho": 0,
-               "pathMaterialEstudo": "c:\\material\\geografia",
-               "atividadeComplementar": 0,
-               "valor": "200.00",
-               "tipo": "Extra",
-               "professor": {
-                  "id": 5,
-                  "nome": "Marta Costa",
-                  "email": "marta@escola.com.br",
-                  "genero": "F",
-                  "discliplinaId": 6
                }
             }
          ]
