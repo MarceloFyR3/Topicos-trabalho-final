@@ -1,4 +1,4 @@
-const disciplina = [
+const disciplinas = [
     {
         "id": 1,
         "nome": "Matematica",
@@ -155,7 +155,7 @@ const disciplina = [
     },
     {
         "id": 8,
-        "nome": "Calculo",
+        "nome": "Volei",
         "cargaHoraria": 40,
         "presença": 0,
         "falta": 0,

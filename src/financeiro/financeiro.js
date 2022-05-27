@@ -1,3 +1,12 @@
+$(document).ready(function () {
+    //Check Aluno localstorage
+    let alunosString = localStorage.getItem('alunos');
+
+    if (alunosString) {
+        alunos = JSON.parse(alunosString);
+    }
+});
+
 function carregarTableData() {
 
     const table = document.getElementById("tableBody");
@@ -27,7 +36,7 @@ function carregarTableData() {
             let valor = row.insertCell(5);
 
             let valorTotal = 0
-            aluno.turma.disciplina.map((s) => {
+            aluno.turma.disciplinas.map((s) => {
                 valorTotal = valorTotal + parseFloat(s.valor)
             })
             valor.innerHTML = "R$ " + valorTotal + ".00";
@@ -45,15 +54,15 @@ function carregarBoletoAluno(id) {
     msg = msg + "Turma: " + item.turma.nome + "\n";
     msg = msg + "\n-----------------------------\n";
 
-    item.turma.disciplina.forEach(disciplina => {
+    item.turma.disciplinas.forEach(disciplina => {
         let tipo = "Curricular";
         if (disciplina.tipo === "Extra")
-            tipo = "Extra"
+            tipo = "Extra-Curricular"
         msg = msg + "Disciplina " + tipo + "(" + disciplina.cargaHoraria + "): " + disciplina.nome + ", Valor: R$ " + disciplina.valor + "\n";
     });
 
     let valorTotal = 0
-    item.turma.disciplina.map((s) => {
+    item.turma.disciplinas.map((s) => {
         valorTotal = valorTotal + parseFloat(s.valor)
     });
     msg = msg + "-----------------------------\n";

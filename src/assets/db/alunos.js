@@ -1,4 +1,4 @@
-const alunos = [
+var alunos = [
    {
       "id": 1,
       "nome": "MARIA FRANCISCA GOMES",
@@ -25,7 +25,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -167,7 +167,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -309,7 +309,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -451,7 +451,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -593,7 +593,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -735,7 +735,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -877,7 +877,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1019,7 +1019,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1161,7 +1161,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1303,7 +1303,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1445,7 +1445,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1587,7 +1587,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1729,7 +1729,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -1871,7 +1871,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -2013,7 +2013,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -2155,7 +2155,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -2297,7 +2297,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -2439,7 +2439,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -2581,7 +2581,7 @@ const alunos = [
       ],
       "turma": {
          "id": 2,
-         "nome": "Turma 2",
+         "nome": "6º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {
@@ -2723,7 +2723,7 @@ const alunos = [
       ],
       "turma": {
          "id": 1,
-         "nome": "Turma 1",
+         "nome": "5º Ano",
          "anoLetivo": 0,
          "disciplinas": [
             {

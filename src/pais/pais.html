@@ -69,31 +69,25 @@
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Nome do Aluno</label>
                                     <select class="form-control" id="sltAluno" onchange="escolhaAluno()">
+                                        <option value="0">-- Escolha um Responsável -- </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Informe o ano que será cursado:</label>
+                                    <label id="#lblAno"></label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Atividades extra-curiculares:</label>
+                                    <select class="form-control" id="sltDisciplinaExtra">
                                         <option value="0">-- Selecione -- </option>
                                     </select>
                                 </div>
 
-                                <div class="col-5 col-sm-5">
-                                    <label for="idContrato">Data de Nacimento</label>
-                                    <input type="date" class="form-control" />
-                                </div>
-                                <div class="col-5 col-sm-5">
-                                    <label for="idContrato">Informe o ano que sera cursado:</label>
-                                    <input type="text" class="form-control" placeholder="Ex: Sexto ano" />
-                                    <div class="col-sm-5 col-sm-8">
-                                        <label for="idContrato">Atividades extra-curiculares:</label>
-                                        <select name="select">
-                                            <option value="valor1" selected>Futebol</option>
-                                            <option value="valor2">Volei</option>
-                                            <option value="valor3">Judo</option>
-                                            <option value="valor4">Natação</option>
-                                            <option value="valor5">Reforço</option>
-                                        </select>
-                                    </div>
-                                </div>
                                 <br>
                                 &nbsp;
-                                <button class="btn btn-primary" onclick="matricular()">Salvar</button>
+                                <button type="button" class="btn btn-primary" onclick="matricular()">Salvar</button>
                             </form>
                         </div>
                     </div>
@@ -101,7 +95,7 @@
             </div>
         </div>
 
-        <div class="card mt-3">
+        <!-- <div class="card mt-3">
             <div class="card-header">
                 Acompanhamento Escolar
             </div>
@@ -186,7 +180,7 @@
                 <a href="http://basenacionalcomum.mec.gov.br/abase/">BNCC</a>
 
             </div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -204,6 +198,7 @@
 
     <script src="./../../script.js"></script>
     <script type="text/javascript" src="./../assets/db/alunos.js"></script>
+    <script type="text/javascript" src="./../assets/db/disciplinas.js"></script>
     <script src="pais.js"></script>
 
 </body>

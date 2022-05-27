@@ -1,5 +1,15 @@
 $(document).ready(function () {
+
+    //Check Aluno localstorage
+    let alunosString = localStorage.getItem('alunos');
+
+    if (alunosString) {
+        alunos = JSON.parse(alunosString);
+    }
+
     carregarPais();
+    carregaDisciplinaExtra();
+    console.log(alunos);
 });
 
 function carregarPais() {
@@ -42,10 +52,15 @@ function unique(array) {
 }
 
 function escolhaResponsavel() {
+    document.getElementById("#lblAno").innerHTML = "-";
     slt = $("#sltResponsavel").val();
     let arrAlunos = [];
+
+    $("#sltAluno").find('option[value]').remove();
+
     alunos.forEach((aluno, i) => {
-        if (aluno.responsavel.find(x => x.id).id == slt)
+        let exist = aluno.responsavel.find(x => x.id == slt);
+        if (exist)
             arrAlunos.push(aluno)
 
     });
@@ -55,9 +70,10 @@ function escolhaResponsavel() {
         i = 0,
         il = arrAlunos.length;
 
-    // $('#sltAluno option').each(function () {
-    //     $(this).remove();
-    // });
+    option = document.createElement('option');
+    option.setAttribute('value', 0);
+    option.appendChild(document.createTextNode('-- Selecione --'));
+    select.appendChild(option);
 
     for (; i < il; i += 1) {
         option = document.createElement('option');
@@ -67,4 +83,64 @@ function escolhaResponsavel() {
     }
 }
 
-function escolhaAluno() { }
+function carregaDisciplinaExtra() {
+    let disExtra = disciplinas.filter(x => x.tipo == "Extra");
+
+    var select = document.getElementById("sltDisciplinaExtra"),
+        option,
+        i = 0,
+        il = disExtra.length;
+
+    for (; i < il; i += 1) {
+        option = document.createElement('option');
+        option.setAttribute('value', disExtra[i].id);
+        option.appendChild(document.createTextNode(disExtra[i].nome));
+        select.appendChild(option);
+    }
+}
+
+function escolhaAluno() {
+    
+    let alunoId = $("#sltAluno").val();
+
+    if(alunoId != 0){
+        var aluno = alunos.find(x => x.id == alunoId);
+
+        document.getElementById("#lblAno").innerHTML = aluno.turma.nome;
+    }
+ }
+
+function matricular() {
+
+    let alunoId = $("#sltAluno").val();
+
+    if (alunoId == 0) {
+        alert("Escolha um Aluno");
+        return;
+    } else {
+
+        //let aluno = alunos.find(x => x.id == alunoId);
+
+        let disciplinaId = $("#sltDisciplinaExtra").val();
+
+        if (disciplinaId == 0) {
+            alert("Escolha uma Disciplina");
+            return;
+        } else {
+            let disciplina = disciplinas.find(x => x.id == disciplinaId);
+
+            alunos.filter((aluno) => {
+                if (aluno.id == alunoId) {
+                    if (!aluno.turma.disciplinas.find(x => x.id == disciplina.id)){
+                        aluno.turma.disciplinas.push(disciplina);
+                        alert("MATRICULA REALIZADA DISCIPLINA " + disciplina.nome);
+                    }                        
+                    else
+                        alert("DISCIPLINA JA CADASTRADA");
+                }
+            });
+
+            localStorage.setItem("alunos", JSON.stringify(alunos));
+        }
+    }
+}
