@@ -7,10 +7,67 @@ $(document).ready(function () {
         alunos = JSON.parse(alunosString);
     }
 
-    carregarPais();
+    //carregarPais();
+    carregarAlunos();
     carregaDisciplinaExtra();
-    console.log(alunos);
+    carregaDisciplina();
+    carregarTurmas();
 });
+
+function carregarTurmas() {
+
+    var select = document.getElementById("sltTurmas"),
+        option,
+        i = 0,
+        il = turmas.length;
+
+    for (; i < il; i += 1) {
+        option = document.createElement('option');
+        option.setAttribute('value', turmas[i].id);
+        option.appendChild(document.createTextNode(turmas[i].nome));
+        select.appendChild(option);
+    }
+}
+
+
+function carregarAlunos() {
+
+    let responsaveis = [];
+
+    alunos.forEach(aluno => {
+
+        aluno.responsavel.forEach(resp => {
+            responsaveis.push(resp);
+        });
+    })
+
+    responsaveis = unique(responsaveis);
+
+    var select = document.getElementById("sltAluno"),
+        option,
+        i = 0,
+        il = responsaveis.length;
+
+    for (; i < il; i += 1) {
+        option = document.createElement('option');
+        option.setAttribute('value', responsaveis[i].id);
+        option.appendChild(document.createTextNode(responsaveis[i].nome));
+        select.appendChild(option);
+    }
+
+    var selectExtra = document.getElementById("sltAlunoExtra"),
+        option,
+        i = 0,
+        il = responsaveis.length;
+
+    for (; i < il; i += 1) {
+        option = document.createElement('option');
+        option.setAttribute('value', responsaveis[i].id);
+        option.appendChild(document.createTextNode(responsaveis[i].nome));
+        selectExtra.appendChild(option);
+    }
+
+}
 
 function carregarPais() {
 
@@ -99,18 +156,57 @@ function carregaDisciplinaExtra() {
     }
 }
 
+function carregaDisciplina() {
+    let disExtra = disciplinas.filter(x => x.tipo == "Curricular");
+
+    var select = document.getElementById("sltDisciplina"),
+        option,
+        i = 0,
+        il = disExtra.length;
+
+    for (; i < il; i += 1) {
+        option = document.createElement('option');
+        option.setAttribute('value', disExtra[i].id);
+        option.appendChild(document.createTextNode(disExtra[i].nome));
+        select.appendChild(option);
+    }
+}
+
 function escolhaAluno() {
-    
+    document.getElementById("dvTurma").style.display = "none";
     let alunoId = $("#sltAluno").val();
 
-    if(alunoId != 0){
+    if (alunoId != 0) {
         var aluno = alunos.find(x => x.id == alunoId);
 
-        document.getElementById("#lblAno").innerHTML = aluno.turma.nome;
-    }
- }
+        document.getElementById("dvTurma").style.display = "block";
 
-function matricular() {
+        if (aluno.turma == null) {
+            document.getElementById("escolhaTurma").style.display = "block";
+        } else {
+            document.getElementById("temTurma").style.display = "block";
+            document.getElementById("#lblAno").innerHTML = aluno.turma.nome;
+        }
+    }
+}
+
+function escolhaAlunoExtra() {
+    document.getElementById("escolhaTurma").style.display = "none";
+    let alunoId = $("#sltAlunoExtra").val();
+
+    if (alunoId != 0) {
+        var aluno = alunos.find(x => x.id == alunoId);
+
+        if (aluno.turma == null) {
+            alert("POR FAVOR CADASTRE AO MENOS UMA DISCIPLINA CURRICULAR");
+            $("anoCursando").val(0);
+            document.getElementById("escolhaTurma").style.display = "block";
+        } else
+            document.getElementById("#lblAno").innerHTML = aluno.turma.nome;
+    }
+}
+
+function matricularCurricular() {
 
     let alunoId = $("#sltAluno").val();
 
@@ -118,8 +214,55 @@ function matricular() {
         alert("Escolha um Aluno");
         return;
     } else {
+        let disciplinaId = parseInt($("#sltDisciplina").val());
 
-        //let aluno = alunos.find(x => x.id == alunoId);
+        if (disciplinaId == 0) {
+            alert("Escolha uma Disciplina");
+            return;
+        } else {
+            let disciplina = disciplinas.find(x => x.id == disciplinaId);
+
+            alunos.filter((aluno) => {
+                if (aluno.id == alunoId) {
+
+                    if (aluno.turma == null) {
+                        var idTurma = parseInt($("#sltTurmas").val());
+                        if (idTurma == 0) {
+                            alert("Escolha uma Disciplina");
+                        } else {
+                            let tt = turmas.find(x => x.id == idTurma);
+                            aluno.turma = tt;
+                        }
+                    }
+
+                    if (aluno.turma.disciplinas.length == 0) {
+                        aluno.turma.disciplinas.push(disciplina);
+                        alert("MATRICULA REALIZADA DISCIPLINA " + disciplina.nome);
+                    } else {
+                        if (!aluno.turma.disciplinas.filter(x => x.id == disciplina.id)) {
+
+                            aluno.turma.disciplinas.push(disciplina);
+                            alert("MATRICULA REALIZADA DISCIPLINA " + disciplina.nome);
+                        }
+                        else
+                            alert("DISCIPLINA JA CADASTRADA");
+                    }
+                }
+            });
+
+            localStorage.setItem("alunos", JSON.stringify(alunos));
+        }
+    }
+}
+
+function matricular() {
+
+    let alunoId = $("#sltAlunoExtra").val();
+
+    if (alunoId == 0) {
+        alert("Escolha um Aluno");
+        return;
+    } else {
 
         let disciplinaId = $("#sltDisciplinaExtra").val();
 
@@ -131,10 +274,10 @@ function matricular() {
 
             alunos.filter((aluno) => {
                 if (aluno.id == alunoId) {
-                    if (!aluno.turma.disciplinas.find(x => x.id == disciplina.id)){
+                    if (!aluno.turma.disciplinas.find(x => x.id == disciplina.id)) {
                         aluno.turma.disciplinas.push(disciplina);
                         alert("MATRICULA REALIZADA DISCIPLINA " + disciplina.nome);
-                    }                        
+                    }
                     else
                         alert("DISCIPLINA JA CADASTRADA");
                 }

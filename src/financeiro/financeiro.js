@@ -14,7 +14,7 @@ function carregarTableData() {
     let totalRegistro = table.children.length;
 
     if (totalRegistro == 0) {
-        alunos.forEach(aluno => {
+        alunos.filter(f => f.turma != null).forEach(aluno => {
             let row = table.insertRow();
 
             let id = row.insertCell(0);
@@ -26,8 +26,12 @@ function carregarTableData() {
             let turma = row.insertCell(2);
             turma.innerHTML = aluno.turma.nome;
 
+            debugger
             let curricular = row.insertCell(3);
-            curricular.innerHTML = aluno.turma.disciplinas.filter(d => d.tipo == "Curricular").map(x => x.nome).join(", ");
+            if (aluno.turma.disciplinas.filter(x => x.tipo == "Curricular"))
+                curricular.innerHTML = aluno.turma.disciplinas.filter(d => d.tipo == "Curricular").map(x => x.nome).join(", ");
+            else
+                curricular.innerHTML = "-";
 
             let extra = row.insertCell(4);
             let tt = aluno.turma.disciplinas.filter(d => d.tipo == "Extra").map(x => x.nome).join(", ")
