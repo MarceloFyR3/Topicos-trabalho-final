@@ -95,20 +95,33 @@
                 Chamada
             </div>
             <div class="card-body">
-                <form action="Chamada">
-                    <label for="Materia">Selecione a Matéria</label>
-                    <select class="custom-select">
-                        <option selected>Selecione a Matéria</option>
-                        <option value="1">Português</option>
-                        <option value="2">Matemática</option>
-                        <option value="3">Inglês</option>
-                    </select></p>
-                    <div class="form-group">
-                        <label for="Materia">Selecione a Data</label>
-                        <input type="date" class="form-control" id="Materia" placeholder="Data">
-                    </div>
-                    <button type="button" class="btn btn-primary">Gerar Chamada</button>
-                </form>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Selecione a Matéria:</label>
+                    <select class="form-control" onchange="escolhaDisciplina()" id="sltDisciplina">
+                        <option value="0">-- Selecione -- </option>
+                    </select>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label>Selecione o Aluno:</label>
+                    <select class="form-control" id="sltAluno" onchange="escolhaAluno()">
+                        <option value="0">-- Selecione -- </option>
+                    </select>
+                </div> -->
+
+                <table class="table" id="tblAlunosChamada">
+                    <thead>
+                        <tr>
+                            <th scope="col">Aluno</th>
+                            <th scope="col">Presenças</th>
+                            <th scope="col">Faltas</th>
+                            <th scope="col">Marcar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBodyAlunoChamada"></tbody>
+                </table>
+
                 <p class="card-text">
             </div>
         </div>
@@ -118,30 +131,38 @@
                 Lançar Notas
             </div>
             <div class="card-body">
-                <form>
-                    <select class="custom-select">
-                        <option selected>Selecione o Aluno</option>
-                        <option value="1">Huguinho</option>
-                        <option value="2">Zezinho</option>
-                        <option value="3">Luizinho</option>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Nome do Aluno</label>
+                    <select class="form-control" id="sltAlunoLancarNotas" onchange="escolhaAlunoLancarNotas()">
+                        <option value="0">-- Escolha um Aluno -- </option>
                     </select>
-                    <p></p>
-                    <div>
-                        <p>
-                            <select class="custom-select">
-                                <option selected>Seleciono a Atividade</option>
-                                <option value="1">Prova</option>
-                                <option value="2">Trabalho</option>
-                                <option value="3">Atividade complementar</option>
-                            </select>
-                        </p>
-                        <div class="form-group">
-                            <label for="Materia">Informe a nota.</label>
-                            <input type="number" class="form-control" id="Materia" placeholder="Nota">
-                        </div>
+                </div>
+
+                <div id="dvMateriaLancarNota" style="display: none;">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Selecione a Matéria:</label>
+                        <select class="form-control" id="sltDisciplinaLancarNotas">
+                            <option value="0">-- Selecione -- </option>
+                        </select>
                     </div>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </form>
+
+                    <div class="form-group">
+                        <label>Selecione Tipo de Nota:</label>
+                        <select class="form-control" id="sltTipoNotaLancarNotas">
+                            <option value="0">-- Selecione -- </option>
+                            <option value="1">Prova</option>
+                            <option value="2">Trabalho</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Informe a nota.</label>
+                        <input type="number" class="form-control" id="txtNota" placeholder="Nota">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" onclick="lancarNota()">Lançar nota</button>                
             </div>
             <div>
                 <p class="card-text">
@@ -149,9 +170,6 @@
         </div>
 
     </div>
-
-    <script src="./../../script.js"></script>
-    <script src="professor.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -164,6 +182,11 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <script src="./../../script.js"></script>
+    <script type="text/javascript" src="./../assets/db/alunos.js"></script>
+    <script type="text/javascript" src="./../assets/db/disciplinas.js"></script>
+    <script type="text/javascript" src="./../assets/db/turmas.js"></script>
+    <script src="professor.js"></script>
 </body>
 
 </html>

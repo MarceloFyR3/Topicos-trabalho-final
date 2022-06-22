@@ -26,7 +26,6 @@ function carregarTableData() {
             let turma = row.insertCell(2);
             turma.innerHTML = aluno.turma.nome;
 
-            debugger
             let curricular = row.insertCell(3);
             if (aluno.turma.disciplinas.filter(x => x.tipo == "Curricular"))
                 curricular.innerHTML = aluno.turma.disciplinas.filter(d => d.tipo == "Curricular").map(x => x.nome).join(", ");
