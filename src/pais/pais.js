@@ -46,24 +46,24 @@ function carregarAlunos() {
     var select = document.getElementById("sltAluno"),
         option,
         i = 0,
-        il = responsaveis.length;
+        il = alunos.length;
 
     for (; i < il; i += 1) {
         option = document.createElement('option');
-        option.setAttribute('value', responsaveis[i].id);
-        option.appendChild(document.createTextNode(responsaveis[i].nome));
+        option.setAttribute('value', alunos[i].id);
+        option.appendChild(document.createTextNode(alunos[i].nome));
         select.appendChild(option);
     }
 
     var selectExtra = document.getElementById("sltAlunoExtra"),
         option,
         i = 0,
-        il = responsaveis.length;
+        il = alunos.length;
 
     for (; i < il; i += 1) {
         option = document.createElement('option');
-        option.setAttribute('value', responsaveis[i].id);
-        option.appendChild(document.createTextNode(responsaveis[i].nome));
+        option.setAttribute('value', alunos[i].id);
+        option.appendChild(document.createTextNode(alunos[i].nome));
         selectExtra.appendChild(option);
     }
 
@@ -174,6 +174,7 @@ function carregaDisciplina() {
 
 function escolhaAluno() {
     document.getElementById("dvTurma").style.display = "none";
+    document.getElementById("temTurma").style.display = "none";
     let alunoId = $("#sltAluno").val();
 
     if (alunoId != 0) {
@@ -191,7 +192,9 @@ function escolhaAluno() {
 }
 
 function escolhaAlunoExtra() {
-    document.getElementById("escolhaTurma").style.display = "none";
+    debugger
+    document.getElementById("dvTurmaExtra").style.display = "none";
+
     let alunoId = $("#sltAlunoExtra").val();
 
     if (alunoId != 0) {
@@ -200,9 +203,11 @@ function escolhaAlunoExtra() {
         if (aluno.turma == null) {
             alert("POR FAVOR CADASTRE AO MENOS UMA DISCIPLINA CURRICULAR");
             $("anoCursando").val(0);
-            document.getElementById("escolhaTurma").style.display = "block";
-        } else
-            document.getElementById("#lblAno").innerHTML = aluno.turma.nome;
+        } else {
+            document.getElementById("dvTurmaExtra").style.display = "block";
+            document.getElementById("#lblAnoExtra").innerHTML = aluno.turma.nome;
+        }
+            
     }
 }
 
@@ -239,7 +244,7 @@ function matricularCurricular() {
                         aluno.turma.disciplinas.push(disciplina);
                         alert("MATRICULA REALIZADA DISCIPLINA " + disciplina.nome);
                     } else {
-                        if (!aluno.turma.disciplinas.filter(x => x.id == disciplina.id)) {
+                        if (!aluno.turma.disciplinas.find(x => x.id == disciplina.id)) {
 
                             aluno.turma.disciplinas.push(disciplina);
                             alert("MATRICULA REALIZADA DISCIPLINA " + disciplina.nome);

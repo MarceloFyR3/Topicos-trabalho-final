@@ -59,13 +59,6 @@
                         </p>
                         <div>
                             <form>
-                                <!-- <div class="form-group"> -->
-                                    <!-- <label for="exampleFormControlSelect1">Responsável</label> -->
-                                    <!-- <select class="form-control" id="sltResponsavel" onchange="escolhaResponsavel()"> -->
-                                        <!-- <option value="0">-- Selecione -- </option> -->
-                                    <!-- </select> -->
-                                <!-- </div> -->
-
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Nome do Aluno</label>
                                     <select class="form-control" id="sltAluno" onchange="escolhaAluno()">
@@ -124,10 +117,13 @@
                                     </select>
                                 </div>
 
-                                <div class="form-group" id="anoCursando" style="display: none;">
-                                    <label for="exampleFormControlSelect1">Informe o ano que será cursado:</label>
-                                    <label id="#lblAno"></label>
+                                <div id="dvTurmaExtra" style="display: none;">    
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Ano matriculado:</label>
+                                        <label id="#lblAnoExtra"></label>
+                                    </div>
                                 </div>
+
 
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Atividades extra-curiculares:</label>

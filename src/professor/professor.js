@@ -35,6 +35,7 @@ fileInput.addEventListener("change", event => {
     uploadFile(files[0]);
   });
 
+
 function carregaDisciplina() {
     var select = document.getElementById("sltDisciplina"),
         option,
@@ -345,5 +346,22 @@ function carregarTableData() {
             let btn = row.insertCell(5);
             btn.innerHTML = "<button type=\"button\" onclick='carregarBoletoAluno(" + item.id + ")' class=\"btn btn-secondary\">Imprimir</button>";
         });
+    }
+}
+
+function gerarAtividade() {
+    const InputNameAluno = document.getElementById("InputNameAluno").value;
+    const inputMateria = document.getElementById("inputMateria").value;
+    const InputConteudo = document.getElementById("InputConteudo").value;
+    const InputData = document.getElementById("InputData").value;
+
+
+    let msg = "Atividade Aplicada: " + InputNameAluno + "\n\n";
+
+    if (InputNameAluno == "Huguinho" || InputNameAluno == "Luizinho" || InputNameAluno == "Zezinho") {
+        msg = msg + "Matéria: " + inputMateria + "\n" + "Atividade: " + InputConteudo + "\n" + "Data da aplicação: " + InputData;
+        alert(msg);
+    } else {
+        alert("ALUNO NÃO ENCONTRADO!");
     }
 }
