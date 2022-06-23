@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -55,22 +55,54 @@
                 <p class="card-text">• Ser capaz de consultar minha agenda de provas, aulas e atividades extras, para
                     facilitar minha organização nos estudos. </p>
 
-                <button type="button" class="btn btn-primary" id="" onclick="Consultaragendadeprovas()">Cronograma de
-                    Provas</button><br><br>
+                <table class="table">
+                    <thead>
+                        <th>
+                            Materia
+                        </th>
 
-                <div id="dvConsultaAgenda" style="display: none;">
-                    <ul class="list-group">
-                        <li class="list-group-item">02 de Abril - Prova de Português</li>
-                        <li class="list-group-item">03 de Abril - Prova de Matematica</li>
+                        <th>
+                            Dias de Aula
+                        </th>
+
+                        <th>
+                            Provas
+                        </th>
+
+                        <th>
+                            Faltas
+                        </th>
+                    </thead>
+                    <tbody></tbody>
+
+                </table>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Nome do aluno</label>
+                    <select class="form-control" id="sltAlunos" onblur="carregarAlunos()">
+                        <option value="0">-- Selecione -- </option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn btn-primary"
+                    onclick="escolhaAluno(document.getElementById('sltAlunos').value)">Consultar</button>
+
+                <!-- <button type="button" class="btn btn-primary" id="" onclick="Consultaragendadeprovas()">Cronograma de
+                    Provas</button><br><br> 
+
+                <div id="dvConsultaAgenda" style="display: none;"> 
+                    <ul class="list-group" id="lstProva"> -->
+                <!-- <li class="list-group-item">02 de Abril - Prova de Português</li>  -->
+                <!-- <li class="list-group-item">03 de Abril - Prova de Matematica</li>
                         <li class="list-group-item">04 de Abril - Prova de Geografia</li>
                         <li class="list-group-item">05 de Abril - Prova de Ciências</li>
                         <li class="list-group-item">06 de Abril - Prova de Ed.Fisica</li><br>
                     </ul>
-                </div>
+                </div>   
 
-                <hr />
+                <hr/>   
 
-                <button type="button" class="btn btn-primary" id="" onclick="HorariodeAulas()">Hórario de
+                     <button type="button" class="btn btn-primary" id="" onclick="HorariodeAulas()">Hórario de
                     Aulas</button><br><br>
 
                 <div id="dvHorariodeAulas" style="display: none;">
@@ -124,98 +156,122 @@
                         </tbody>
                     </table>
 
-                </div>
+                </div> -->
 
-                <hr />
+                <!-- <hr /> -->
 
-                <button type="button" class="btn btn-primary" id="" onclick="AulasExtras()">Aulas Extras</button>
+                <!-- <button type="button" class="btn btn-primary" id="" onclick="carregaDisciplinaExtra()">Aulas Extras</button> -->
 
-                <div id="dvAulasExtras" style="display: none;">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Segunda</th>
-                                <th scope="col">Quarta</th>
-                                <th scope="col">Sexta</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cálculo</td>
-                                <td>Produção de Texto</td>
-                                <td>Vôlei</td>
 
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
 
             </div>
         </div>
-
 
         <div class="card mt-3">
             <div class="card-header">
-                Matricula
+                Material de Consulta
             </div>
-            <div class="card-body mt-3">
-                <p class="card-text">• Ser capaz de me matricular em atividades extras, para não ter que ir na
-                    secretaria. </p>
 
-                <form action="/action_page.php">
-                    <div class="form-group">
-                        <label>Nome</label>
-                        <input type="text" class="form-control" placeholder="Nome" id="nome">
-                    </div>
-                    <div class="form-group">
-                        <label>Matricula</label>
-                        <input type="text" class="form-control" placeholder="Matricula" id="matricula">
-                    </div>
-                    <div class="form-group">
-                        <label>Matricula</label>
-                        <select class="form-control" id="atividades">
-                            <option value="0">-- Selecione -- </option>
-                            <option value="1">Atividade Extra 1</option>
-                            <option value="2">Atividade Extra 2</option>
-                            <option value="3">Atividade Extra 3</option>
-                            <option value="4">Atividade Extra 4</option>
-                            <option value="5">Atividade Extra 5</option>
-                        </select>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="matricularAluno()">Matricular</button>
-                </form>
+            <!-- <p>Consultar material de estudos e apoio as disciplinas:</p>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Selecione a Turma</label>
+                <select class="form-control" id="sltAlunos" onblur="()">
+                    <option value="0">-- Selecione a turma -- </option>
+                    <option value="5ano">5º ANO</option>
+                    <option value="6ano">6º ANO</option>
+                </select>
             </div>
+            <button type="button" class="btn btn-primary"
+                onclick="(document.getElementById('sltAlunos').value)">Consultar</button>
+                <br> -->
+           
+
+
+            <button type="button" class="btn btn-primary" id="" onclick="Consultaturma1()">Material 5º Ano</button><br>
+
+
+            <ul id="Turma1" class="list-group" style="display: none;">
+
+                <li class="list-group-item">
+                    <p><a href="https://pt.khanacademy.org/math/pt-5-ano" target="_blank">Matematica</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://www.obichinhodosaber.com/portugues-5o-materia-de-portugues-5o-ano/"
+                            target="_blank">Português</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://pt.khanacademy.org/science/5-ano" target="_blank">Ciências</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://novaescola.org.br/planos-de-aula/fundamental/5ano/educacao-fisica"
+                            target="_blank">Educação Fisica</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://novaescola.org.br/planos-de-aula/fundamental/5ano/geografia"
+                            target="_blank">Geografia</a></p>
+                </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary" id="" onclick="Consultaturma2()">Material 6º
+                Ano</button><br><br>
+            <ul id="Turma2" class="list-group" style="display: none;">
+
+                <li class="list-group-item">
+                    <p><a href="https://azup.com.br/conteudo-matematica-6-ano-ensino-fundamental/"
+                            target="_blank">Matematica</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://www.obichinhodosaber.com/portugues-6o-materia-de-portugues-6o-ano/"
+                            target="_blank">Português</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://pt.khanacademy.org/science/6-ano" target="_blank">Ciências</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://novaescola.org.br/planos-de-aula/fundamental/6ano/educacao-fisica"
+                            target="_blank">Educação Fisica</a></p>
+                </li>
+                <li class="list-group-item">
+                    <p><a href="https://novaescola.org.br/planos-de-aula/fundamental/6ano/geografia"
+                            target="_blank">Geografia</a></p>
+                </li>
+            </ul>
+
+
         </div>
+
+
 
         <div class="card mt-3">
             <div class="card-header">
                 Forúm
             </div>
             <div class="card-body mt-3">
-                <p class="card-text">• Manter uma comunicação direta com meus professores através de um chat/fórum,
-                    porque é mais fácil interagir em qualquer momento que eu precise. </p>
+                <p class="card-text"> Contato via chat </p>
 
-                    <div class="col-sm-3 col-sm-offset-4 frame">
-                        <ul></ul>
-                        <div>
-                            <div class="msj-rta macro">                        
-                                <div class="text text-r" style="background:whitesmoke !important">
-                                    <input id="inputEnviarMmensagem" class="mytext" placeholder="Type a message"/>
-                                </div> 
 
-                                <br>
 
-                                <button type="button" class="btn btn-primary" onclick="enviarMensagem()">Enviar</button>   
-            
-                            </div>
-                            <div style="padding:10px;">
-                                <span class="glyphicon glyphicon-share-alt"></span>
-                            </div>                
-                        </div>
-                    </div>       
+                <h6>Digite sua mensagem:</h6>
+                <div class="msj-rta macro">
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input id="inputEnviarMmensagem" class="mytext" placeholder="Digite sua mensagem" />
+                    </div>
+                    <button onclick="myFunction()">Enviar</button>
+
+
+
+                    <p id="demo"></p>
+
+                </div>
+                <div style="padding:10px;">
+                    <span class="glyphicon glyphicon-share-alt"></span>
+                </div>
             </div>
         </div>
-
+    </div>
+    </div>
+    <!-- 
         <div class="card mt-3">
             <div class="card-header">
                 Material Escolar
@@ -287,13 +343,13 @@
                             <li class="list-group-item">Fundamentos Vôlei</li>
                             <li class="list-group-item">Atividades Praticas</li>
                         </ul>
-                    </div>
+                    </div> -->
 
 
-                </div>
+    </div>
 
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div>
     <!-- Optional JavaScript -->
@@ -308,6 +364,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="./../assets/db/alunos.js"></script>
+    <script type="text/javascript" src="./../assets/db/disciplinas.js"></script>
     <script src="aluno.js"></script>
 
 </body>
