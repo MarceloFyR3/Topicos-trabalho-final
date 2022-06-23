@@ -7,3 +7,6 @@
 #hidden3{
     display: none;
 }
+li{
+    list-style: none;
+}
