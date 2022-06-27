@@ -6,8 +6,10 @@ $(document).ready(function () {
     if (alunosString) {
         alunos = JSON.parse(alunosString);
     }
-    carregaDisciplina();
     carregarAlunosLancarNotas();
+    
+    carregaDisciplina();
+    
 });
 
 const fileInput = document.querySelector("#fileInput");
